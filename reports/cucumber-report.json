@@ -1,0 +1,61 @@
+[
+  {
+    "description": "  As a WellRx user who is not signed in\n  I want to search for a drug for a given location",
+    "elements": [
+      {
+        "id": "searching-for-drug-locations;search-with-a-valid-address",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Search with a valid address",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search for \"LOSARTAN POTASSIUM\" at location \"85749\"",
+            "result": {
+              "status": "passed",
+              "duration": 4244196300
+            },
+            "line": 6,
+            "match": {
+              "location": "C:\\Projects\\wellrx-test\\web\\steps\\drug-search-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see results",
+            "result": {
+              "status": "passed",
+              "duration": 23778800
+            },
+            "line": 7,
+            "match": {
+              "location": "C:\\Projects\\wellrx-test\\web\\steps\\drug-search-steps.js:10"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 31140200
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Projects\\wellrx-test\\web\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "searching-for-drug-locations",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Searching for drug locations",
+    "tags": [],
+    "uri": "C:/Projects/wellrx-test/web/features/drug-search.feature"
+  }
+]
