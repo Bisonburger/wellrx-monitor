@@ -4,8 +4,9 @@ Feature: Searching for drug locations
 
   Scenario Outline:  Search with a valid address
     When I search for "<drug>" at location "<address>"
-    Then I should see results
+    Then I should see results for "<drug>"
 
     Examples:
     |drug|address|
     |LOSARTAN POTASSIUM|85749|
+    |LIPITOR|17756|

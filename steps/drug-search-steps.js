@@ -7,17 +7,11 @@ module.exports = function () {
     })
 });
 
-    this.Then(/^I should see results$/, function () {
-
-        // driver wait returns a promise so return that
+    this.Then(/^I should see results for "([^"]*)"$/, function (drug) {
         return driver.wait(until.elementsLocated(by.id('res')), 10000).then(function(){
-
-            // return the promise of an element to the following then.
             return driver.findElements(by.id('res'));
         })
         .then(function (elements) {
-
-            // verify this element has children
             expect(elements.length).to.not.equal(0);
         });
     });

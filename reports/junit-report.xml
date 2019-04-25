@@ -2,12 +2,35 @@
 <testsuites>
     <testsuite name="searching-for-drug-locations;search-with-a-valid-address" tests="2" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:/Projects/wellrx-monitor/features/drug-search.feature">
+            <property name="URI" value="D:/Projects/wellrx-monitor/features/drug-search.feature">
             </property>
         </properties>
-        <testcase name="When I search for &quot;LOSARTAN POTASSIUM&quot; at location &quot;85749&quot;" classname="searching-for-drug-locations;search-with-a-valid-address" time="5.959670701">
+        <testcase name="When I search for &quot;LOSARTAN POTASSIUM&quot; at location &quot;85749&quot;" classname="searching-for-drug-locations;search-with-a-valid-address" time="9.6851824">
         </testcase>
-        <testcase name="Then I should see results" classname="searching-for-drug-locations;search-with-a-valid-address" time="0.024300799">
+        <testcase name="Then I should see results for &quot;LOSARTAN POTASSIUM&quot;" classname="searching-for-drug-locations;search-with-a-valid-address" time="0.069858599">
+        </testcase>
+    </testsuite>
+    <testsuite name="searching-for-drug-locations;search-with-a-valid-address" tests="2" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="D:/Projects/wellrx-monitor/features/drug-search.feature">
+            </property>
+        </properties>
+        <testcase name="When I search for &quot;LIPITOR&quot; at location &quot;17756&quot;" classname="searching-for-drug-locations;search-with-a-valid-address" time="7.833867501">
+        </testcase>
+        <testcase name="Then I should see results for &quot;LIPITOR&quot;" classname="searching-for-drug-locations;search-with-a-valid-address" time="0.060592399">
+        </testcase>
+    </testsuite>
+    <testsuite name="searching-for-drug-locations;search-with-a-valid-address" tests="2" failures="1" skipped="1">
+        <properties>
+            <property name="URI" value="D:/Projects/wellrx-monitor/features/drug-search.feature">
+            </property>
+        </properties>
+        <testcase name="When I search for &quot;ABC&quot; at location &quot;8&quot;" classname="searching-for-drug-locations;search-with-a-valid-address" time="10.0026378">
+            <failure message="function timed out after 10000 milliseconds">function timed out after 10000 milliseconds</failure>
+        </testcase>
+        <testcase name="Then I should see results for &quot;ABC&quot;" classname="searching-for-drug-locations;search-with-a-valid-address">
+            <skipped message="">
+            </skipped>
         </testcase>
     </testsuite>
 </testsuites>
