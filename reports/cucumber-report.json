@@ -14,11 +14,11 @@
             "name": "I search for \"LOSARTAN POTASSIUM\" at location \"85749\"",
             "result": {
               "status": "passed",
-              "duration": 4244196300
+              "duration": 5959670701
             },
             "line": 6,
             "match": {
-              "location": "C:\\Projects\\wellrx-test\\web\\steps\\drug-search-steps.js:3"
+              "location": "C:\\Projects\\wellrx-monitor\\steps\\drug-search-steps.js:3"
             }
           },
           {
@@ -27,11 +27,11 @@
             "name": "I should see results",
             "result": {
               "status": "passed",
-              "duration": 23778800
+              "duration": 24300799
             },
             "line": 7,
             "match": {
-              "location": "C:\\Projects\\wellrx-test\\web\\steps\\drug-search-steps.js:10"
+              "location": "C:\\Projects\\wellrx-monitor\\steps\\drug-search-steps.js:10"
             }
           },
           {
@@ -39,11 +39,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 31140200
+              "duration": 41589999
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Projects\\wellrx-test\\web\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Projects\\wellrx-monitor\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -56,6 +56,6 @@
     "line": 1,
     "name": "Searching for drug locations",
     "tags": [],
-    "uri": "C:/Projects/wellrx-test/web/features/drug-search.feature"
+    "uri": "C:/Projects/wellrx-monitor/features/drug-search.feature"
   }
 ]
