@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "selenium-cucumber-js": "^1.6.2"
+  },
+  "dependencies": {
+    "chai-as-promised": "^7.1.1"
   }
 }

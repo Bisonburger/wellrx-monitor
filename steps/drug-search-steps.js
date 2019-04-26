@@ -1,3 +1,9 @@
+var chai = require("chai");
+
+chai.use( require("chai-as-promised") );
+
+chai.should();
+
 module.exports = function () {
 
   this.When(/^I search for "([^"]*)" at location "([^"]*)"$/, function (drug,address) {
@@ -7,12 +13,21 @@ module.exports = function () {
     })
 });
 
-    this.Then(/^I should see results for "([^"]*)"$/, function (drug) {
-        return driver.wait(until.elementsLocated(by.id('res')), 10000).then(function(){
-            return driver.findElements(by.id('res'));
+    this.Then(/^I should not see an error message$/, function () {
+        return driver.wait(until.elementsLocated(by.id('error')), 10000).then(function(){
+            return driver.findElement(by.id('error'));
         })
-        .then(function (elements) {
-            expect(elements.length).to.not.equal(0);
+        .then(function (element) {
+            element.isDisplayed().should.eventually.be.false;
+        });
+    });
+
+    this.Then(/^I should see an error message$/, function () {
+        return driver.wait(until.elementsLocated(by.id('error')), 10000).then(function(){
+            return driver.findElement(by.id('error'));
+        })
+        .then(function (element) {
+            element.isDisplayed().should.eventually.be.true;
         });
     });
 };
