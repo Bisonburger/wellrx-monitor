@@ -4,5 +4,6 @@
     "sharedObjects": "./shared",
     "reports": "./reports",
     "browser": "phantomjs",
+    "browser-teardown": "always",
     "timeout": 10000
 }

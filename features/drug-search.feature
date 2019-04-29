@@ -4,7 +4,8 @@ Feature: Searching for drug locations
 
   Scenario Outline:  Search with a valid address
     When I search for "<drug>" at location "<address>"
-    Then I should not see an error message
+    Then I shouldn't see an error message
+    And I should see drug search results
 
     Examples:
     |drug|address|
@@ -14,6 +15,7 @@ Feature: Searching for drug locations
   Scenario Outline:  Search with an invalid drug name
     When I search for "<drug>" at location "<address>"
     Then I should see an error message
+    And I shouldn't see drug search results
 
     Examples:
     |drug|address|
@@ -24,6 +26,7 @@ Feature: Searching for drug locations
   Scenario Outline:  Search with an invalid address
     When I search for "<drug>" at location "<address>"
     Then I should see an error message
+    And I shouldn't see drug search results
 
     Examples:
     |drug|address|

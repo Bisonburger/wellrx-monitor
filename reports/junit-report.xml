@@ -1,89 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="searching-for-drug-locations;search-with-a-valid-address" tests="2" failures="0" skipped="0">
+    <testsuite name="searching-for-drug-locations;search-with-a-valid-address" tests="3" failures="0" skipped="0">
         <properties>
             <property name="URI" value="C:/Projects/wellrx-monitor/features/drug-search.feature">
             </property>
         </properties>
-        <testcase name="When I search for &quot;LOSARTAN POTASSIUM&quot; at location &quot;85749&quot;" classname="searching-for-drug-locations;search-with-a-valid-address" time="6.334703999">
+        <testcase name="When I search for &quot;LOSARTAN POTASSIUM&quot; at location &quot;85749&quot;" classname="searching-for-drug-locations;search-with-a-valid-address" time="6.3497982">
         </testcase>
-        <testcase name="Then I should not see an error message" classname="searching-for-drug-locations;search-with-a-valid-address" time="0.0490769">
+        <testcase name="Then I shouldn&apos;t see an error message" classname="searching-for-drug-locations;search-with-a-valid-address" time="0.000394399">
+        </testcase>
+        <testcase name="And I should see drug search results" classname="searching-for-drug-locations;search-with-a-valid-address" time="0.0005399">
         </testcase>
     </testsuite>
-    <testsuite name="searching-for-drug-locations;search-with-a-valid-address" tests="2" failures="0" skipped="0">
+    <testsuite name="searching-for-drug-locations;search-with-a-valid-address" tests="3" failures="0" skipped="0">
         <properties>
             <property name="URI" value="C:/Projects/wellrx-monitor/features/drug-search.feature">
             </property>
         </properties>
-        <testcase name="When I search for &quot;LIPITOR&quot; at location &quot;17756&quot;" classname="searching-for-drug-locations;search-with-a-valid-address" time="5.5661308">
+        <testcase name="When I search for &quot;LIPITOR&quot; at location &quot;17756&quot;" classname="searching-for-drug-locations;search-with-a-valid-address" time="5.560556501">
         </testcase>
-        <testcase name="Then I should not see an error message" classname="searching-for-drug-locations;search-with-a-valid-address" time="0.059309201">
+        <testcase name="Then I shouldn&apos;t see an error message" classname="searching-for-drug-locations;search-with-a-valid-address" time="0.0002735">
+        </testcase>
+        <testcase name="And I should see drug search results" classname="searching-for-drug-locations;search-with-a-valid-address" time="0.0002376">
         </testcase>
     </testsuite>
-    <testsuite name="searching-for-drug-locations;search-with-an-invalid-drug-name" tests="2" failures="1" skipped="0">
+    <testsuite name="searching-for-drug-locations;search-with-an-invalid-drug-name" tests="3" failures="0" skipped="0">
         <properties>
             <property name="URI" value="C:/Projects/wellrx-monitor/features/drug-search.feature">
             </property>
         </properties>
-        <testcase name="When I search for &quot;I M NOT A DRUG&quot; at location &quot;85749&quot;" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="5.4871623">
+        <testcase name="When I search for &quot;I M NOT A DRUG&quot; at location &quot;85749&quot;" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="5.561950501">
         </testcase>
-        <testcase name="Then I should see an error message" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="0.0647293">
-            <failure message="AssertionError: expected false to be true">AssertionError: expected false to be true
-    at getBasePromise.then.then.newArgs (C:\Projects\wellrx-monitor\node_modules\chai-as-promised\lib\chai-as-promised.js:302:22)
-    at ManagedPromise.invokeCallback_ (C:\Projects\wellrx-monitor\node_modules\selenium-webdriver\lib\promise.js:1384:14)
-    at TaskQueue.execute_ (C:\Projects\wellrx-monitor\node_modules\selenium-webdriver\lib\promise.js:3092:14)
-    at TaskQueue.executeNext_ (C:\Projects\wellrx-monitor\node_modules\selenium-webdriver\lib\promise.js:3075:27)
-    at asyncRun (C:\Projects\wellrx-monitor\node_modules\selenium-webdriver\lib\promise.js:2935:27)
-    at C:\Projects\wellrx-monitor\node_modules\selenium-webdriver\lib\promise.js:676:7
-    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+        <testcase name="Then I should see an error message" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="0.0003325">
+        </testcase>
+        <testcase name="And I shouldn&apos;t see drug search results" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="0.0004282">
         </testcase>
     </testsuite>
-    <testsuite name="searching-for-drug-locations;search-with-an-invalid-drug-name" tests="2" failures="0" skipped="0">
+    <testsuite name="searching-for-drug-locations;search-with-an-invalid-drug-name" tests="3" failures="0" skipped="0">
         <properties>
             <property name="URI" value="C:/Projects/wellrx-monitor/features/drug-search.feature">
             </property>
         </properties>
-        <testcase name="When I search for &quot;L&quot; at location &quot;17756&quot;" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="5.5874182">
+        <testcase name="When I search for &quot;L&quot; at location &quot;17756&quot;" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="5.5683161">
         </testcase>
-        <testcase name="Then I should see an error message" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="0.0689128">
+        <testcase name="Then I should see an error message" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="0.000632799">
+        </testcase>
+        <testcase name="And I shouldn&apos;t see drug search results" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="0.0003172">
         </testcase>
     </testsuite>
-    <testsuite name="searching-for-drug-locations;search-with-an-invalid-drug-name" tests="2" failures="1" skipped="0">
+    <testsuite name="searching-for-drug-locations;search-with-an-invalid-drug-name" tests="3" failures="0" skipped="0">
         <properties>
             <property name="URI" value="C:/Projects/wellrx-monitor/features/drug-search.feature">
             </property>
         </properties>
-        <testcase name="When I search for &quot;LO&quot; at location &quot;17756&quot;" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="5.3511853">
+        <testcase name="When I search for &quot;LO&quot; at location &quot;17756&quot;" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="5.4855635">
         </testcase>
-        <testcase name="Then I should see an error message" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="0.0553576">
-            <failure message="AssertionError: expected false to be true">AssertionError: expected false to be true
-    at getBasePromise.then.then.newArgs (C:\Projects\wellrx-monitor\node_modules\chai-as-promised\lib\chai-as-promised.js:302:22)
-    at ManagedPromise.invokeCallback_ (C:\Projects\wellrx-monitor\node_modules\selenium-webdriver\lib\promise.js:1384:14)
-    at TaskQueue.execute_ (C:\Projects\wellrx-monitor\node_modules\selenium-webdriver\lib\promise.js:3092:14)
-    at TaskQueue.executeNext_ (C:\Projects\wellrx-monitor\node_modules\selenium-webdriver\lib\promise.js:3075:27)
-    at asyncRun (C:\Projects\wellrx-monitor\node_modules\selenium-webdriver\lib\promise.js:2935:27)
-    at C:\Projects\wellrx-monitor\node_modules\selenium-webdriver\lib\promise.js:676:7
-    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+        <testcase name="Then I should see an error message" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="0.000238301">
+        </testcase>
+        <testcase name="And I shouldn&apos;t see drug search results" classname="searching-for-drug-locations;search-with-an-invalid-drug-name" time="0.000256801">
         </testcase>
     </testsuite>
-    <testsuite name="searching-for-drug-locations;search-with-an-invalid-address" tests="2" failures="0" skipped="0">
+    <testsuite name="searching-for-drug-locations;search-with-an-invalid-address" tests="3" failures="0" skipped="0">
         <properties>
             <property name="URI" value="C:/Projects/wellrx-monitor/features/drug-search.feature">
             </property>
         </properties>
-        <testcase name="When I search for &quot;LOSARTAN POTASSIUM&quot; at location &quot;1&quot;" classname="searching-for-drug-locations;search-with-an-invalid-address" time="5.616692399">
+        <testcase name="When I search for &quot;LOSARTAN POTASSIUM&quot; at location &quot;1&quot;" classname="searching-for-drug-locations;search-with-an-invalid-address" time="5.521186399">
         </testcase>
-        <testcase name="Then I should see an error message" classname="searching-for-drug-locations;search-with-an-invalid-address" time="0.054005201">
+        <testcase name="Then I should see an error message" classname="searching-for-drug-locations;search-with-an-invalid-address" time="0.0002157">
+        </testcase>
+        <testcase name="And I shouldn&apos;t see drug search results" classname="searching-for-drug-locations;search-with-an-invalid-address" time="0.00014">
         </testcase>
     </testsuite>
-    <testsuite name="searching-for-drug-locations;search-with-an-invalid-address" tests="2" failures="0" skipped="0">
+    <testsuite name="searching-for-drug-locations;search-with-an-invalid-address" tests="3" failures="0" skipped="0">
         <properties>
             <property name="URI" value="C:/Projects/wellrx-monitor/features/drug-search.feature">
             </property>
         </properties>
-        <testcase name="When I search for &quot;LIPITOR&quot; at location &quot;INVALID&quot;" classname="searching-for-drug-locations;search-with-an-invalid-address" time="5.887683">
+        <testcase name="When I search for &quot;LIPITOR&quot; at location &quot;INVALID&quot;" classname="searching-for-drug-locations;search-with-an-invalid-address" time="7.5323104">
         </testcase>
-        <testcase name="Then I should see an error message" classname="searching-for-drug-locations;search-with-an-invalid-address" time="0.0527774">
+        <testcase name="Then I should see an error message" classname="searching-for-drug-locations;search-with-an-invalid-address" time="0.000294701">
+        </testcase>
+        <testcase name="And I shouldn&apos;t see drug search results" classname="searching-for-drug-locations;search-with-an-invalid-address" time="0.0003254">
         </testcase>
     </testsuite>
 </testsuites>

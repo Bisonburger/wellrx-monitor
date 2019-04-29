@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node .\\node_modules\\selenium-cucumber-js\\index.js -s ./steps -b phantomjs",
-    "test-chrome": "node .\\node_modules\\selenium-cucumber-js\\index.js -s ./steps -b chrome"
+    "test-chrome": "node .\\node_modules\\selenium-cucumber-js\\index.js -s ./steps -b chrome -k always"
   },
   "author": "",
   "license": "ISC",
